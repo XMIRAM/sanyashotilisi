@@ -7,96 +7,96 @@
     body {
         margin: 0;
         padding: 0;
-        background: linear-gradient(135deg, red, orange, yellow, green, cyan, blue, purple);
-        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg,#ff00c8,#ff7a00,#ffe600,#2bdcff,#9e00ff);
+        background-size: 400% 400%;
+        animation: gradient 12s ease infinite;
+        font-family: "Arial", sans-serif;
+        color: white;
         text-align: center;
-        color: #fff;
-        animation: bg 8s infinite linear;
     }
-
-    @keyframes bg {
-        0% {filter: hue-rotate(0deg);}
-        100% {filter: hue-rotate(360deg);}
+    @keyframes gradient {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
     }
-
-    h1 {
-        font-size: 60px;
-        margin-top: 40px;
-        text-shadow: 0 0 10px #000;
-        font-weight: 900;
-        transform: rotate(-2deg);
+    h1{
+        margin-top:40px;
+        font-size:55px;
+        font-weight:900;
+        text-shadow:0 0 15px rgba(0,0,0,0.5);
     }
-
-    .sub {
-        font-size: 28px;
-        margin-bottom: 30px;
-        opacity: 0.9;
-        transform: rotate(1deg);
+    .sub{
+        font-size:24px;
+        opacity:0.9;
+        margin-bottom:30px;
     }
-
-    .photo {
-        width: 260px;
-        height: 260px;
-        border-radius: 30px;
-        overflow: hidden;
-        margin: 0 auto;
-        border: 6px solid white;
-        box-shadow: 0 0 25px rgba(0,0,0,0.5);
-        transform: rotate(1deg);
+    .photo-box{
+        width:290px;
+        margin:20px auto;
+        background:rgba(255,255,255,0.12);
+        padding:15px;
+        border-radius:25px;
+        backdrop-filter:blur(8px);
+        box-shadow:0 0 20px rgba(0,0,0,0.4);
     }
-
-    .block {
-        background: rgba(0,0,0,0.35);
-        padding: 25px;
-        width: 80%;
-        margin: 40px auto;
-        border-radius: 20px;
-        font-size: 24px;
-        backdrop-filter: blur(3px);
-        transform: rotate(-1.5deg);
+    .photo{
+        width:100%;
+        border-radius:20px;
+        box-shadow:0 0 25px rgba(0,0,0,0.5);
     }
-
-    .btn {
-        font-size: 30px;
-        padding: 20px 35px;
-        background: #fff;
-        border-radius: 15px;
-        display: inline-block;
-        color: #000;
-        font-weight: bold;
-        margin-top: 20px;
-        text-decoration: none;
-        box-shadow: 0 0 20px #000;
-        transform: rotate(2deg);
-        cursor: pointer;
+    .block{
+        width:85%;
+        max-width:450px;
+        margin:40px auto;
+        background:rgba(0,0,0,0.25);
+        padding:25px;
+        font-size:22px;
+        border-radius:20px;
+        backdrop-filter:blur(6px);
+        box-shadow:0 0 20px rgba(0,0,0,0.4);
     }
-
-    .footer {
-        margin-top: 50px;
-        opacity: 0.7;
-        font-size: 17px;
+    .btn{
+        padding:18px 35px;
+        background:white;
+        color:#000;
+        font-size:26px;
+        border-radius:15px;
+        text-decoration:none;
+        font-weight:bold;
+        box-shadow:0 0 20px rgba(0,0,0,0.4);
+        display:inline-block;
+        margin-top:10px;
+    }
+    .btn:hover{
+        background:#ffe7ff;
+    }
+    .footer{
+        margin-top:50px;
+        opacity:0.7;
+        font-size:16px;
     }
 </style>
 </head>
-
 <body>
 
 <h1>Саня шо ти лиси</h1>
-<div class="sub">официально подтверждённый лысоватый мем</div>
+<div class="sub">официальная гейская визитка 2025 🌈</div>
 
-<div class="photo">
-    <img src="sanya.jpg" width="260">
+<div class="photo-box">
+    <img src="sanya.jpg" class="photo">
 </div>
 
 <div class="block">
-    ✔ Проверка системы: ЛЫСИНА ОБНАРУЖЕНА ✔<br><br>
-    ✔ Уровень блеска: 87%<br><br>
-    ✔ Мем-сертификация: УСПЕШНО 💫
+    💗 Сертификат лысоты: <b>ПОДТВЕРЖДЁН</b><br><br>
+    🌈 Уровень гей-энергии: <b>146%</b><br><br>
+    ✨ Статус: сладенький лысик мемного происхождения<br><br>
 </div>
 
-<a class="btn" onclick="alert('Лысина подтверждена ✔️')">ПОДТВЕРДИТЬ</a>
+<a class="btn" onclick="alert('Подтверждено! Саня — официальный лысик 🌈')">
+    Подтвердить лысоту
+</a>
 
-<div class="footer">© 2025 | sanyashotilisi.lol (мем версия)</div>
+<div class="footer">© 2025 | Саня Лиси | Гей-портал всего района</div>
 
 </body>
 </html>
